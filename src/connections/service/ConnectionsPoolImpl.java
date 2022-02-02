@@ -91,11 +91,5 @@ public class ConnectionsPoolImpl implements ConnectionsPool {
 		}
 		return nodeById.connection;
 	}
-///////////////////////////////////////////////////////////////	
-	public int getNewestConnectionId() {
-		if(list.head==null) {
-			return -5;
-		}
-		return list.head.connection.getId();
-	}
+
 }
